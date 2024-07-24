@@ -5,7 +5,7 @@ namespace IELTS_assistant.Models
 {
     public class User
     {
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
         public string UserName { get; set; }
         public string Email { get; set; }
         public string HashPassword { get; set; }
@@ -17,5 +17,7 @@ namespace IELTS_assistant.Models
         public ICollection<ProgressTracking> ProgressTracking { get; set; }
         public ICollection<StudyMaterial> Materials { get; set; }
         public ICollection<Tests> Tests { get; set; }
+        public ICollection<UserMaterial> UserMaterials { get; set; }
+        public ICollection<UserTest> UserTests { get; set; }
     }
 }
